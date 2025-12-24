@@ -1,173 +1,79 @@
-# 🔐 TryHackMe Write-up  
-## CyberChef – Hoperation Save McSkidy  
-*(Advent of Cyber 2025)*
+# 🔐 TryHackMe CTF Write-ups
+
+Welcome to my **TryHackMe CTF Write-ups Repository** 👋  
+
+This repository contains my documented solutions for various **TryHackMe rooms**,
+with a focus on **cybersecurity fundamentals, hands-on labs, and real-world attack
+and defense techniques**. Each write-up explains the **methodology, tools used,
+and key learnings** from the room.
 
 ---
 
-## 📌 Overview
+## 📌 About This Repository
 
-This TryHackMe room is part of the **Advent of Cyber 2025** series and focuses on
-**encoding/decoding techniques using CyberChef** combined with **client-side
-JavaScript logic analysis**.
+- 📚 Step-by-step CTF write-ups
+- 🛠 Practical use of security tools
+- 🧠 Focus on understanding *why* an attack works
+- ✍️ Clear, professional documentation
+- 🎯 Internship and interview ready
 
-The challenge is structured as a **five-level security system**, where each level
-represents a lock that must be unlocked sequentially by obtaining valid
-credentials.
-
----
-
-## 🧩 Room Information
-
-| Field        | Details |
-|-------------|---------|
-| Platform     | TryHackMe |
-| Room Name    | CyberChef – Hoperation Save McSkidy |
-| Category     | Encoding / Decoding |
-| Difficulty   | Easy – Medium |
-| Event        | Advent of Cyber 2025 |
-| Objective    | Unlock all five levels and free McSkidy |
+All write-ups are created **for educational purposes only**.
 
 ---
 
-## 🏰 Lock Structure
+## 🧩 Categories Covered
 
-| Level | Lock Name |
-|------|----------|
-| 1 | Outer Gate |
-| 2 | Outer Wall |
-| 3 | Guard House |
-| 4 | Inner Castle |
-| 5 | Prison Tower |
-
-Each lock requires a **username and password** to proceed.
+- 🐧 Linux Fundamentals & CLI
+- 🎣 Social Engineering & Phishing
+- 🔐 Encoding & Decoding
+- 🌐 Web Security
+- 🔍 Blue Team & Log Analysis
 
 ---
 
-## 🔍 Common Pattern Observed
+## 🎄 Advent of Cyber 2025
 
-Across all levels, the following pattern was identified:
-
-- **Username** is provided by a chatbot in an **encoded format**
-- Encoding type: **Base64**
-- **Password** is generated using **client-side JavaScript logic**
-- Browser Developer Tools are required to inspect and understand this logic
-- CyberChef is used to decode the username at every level
+| Day | Room | Write-up |
+|----|------|---------|
+| Day 01 | Linux CLI – Shells & Bells | [View](Advent-of-Cyber-2025/Day-01-Linux-CLI-Shells-and-Bells.md) |
+| Day 02 | Phishing – Merry Clickmas | [View](Advent-of-Cyber-2025/Day-02-Phishing-Merry-Clickmas.md) |
 
 ---
 
-## 🛠 Tools Used
+## 🛠 Tools & Technologies
 
-- **CyberChef**
-- **Browser Developer Tools (Inspect Element)**
-- **TryHackMe AttackBox / VPN**
-- **JavaScript logic analysis**
-
----
-
-## 🔑 Level-wise Solution
+- Linux Command Line
+- CyberChef
+- Social-Engineer Toolkit (SET)
+- Browser Developer Tools
+- TryHackMe AttackBox
 
 ---
 
-### 🥇 Level 1 – Outer Gate
+## 🎯 Learning Goals
 
-**Username:**
-- Chatbot provided a username
-- Used **CyberChef → Base64 Encode** to retrieve encoded username
-
-**Password:**
-- Inspected JavaScript authentication logic
-- Identified simple validation condition
-- Derived correct password from the logic
-
-**Result: Iamsofluffy** Outer Gate unlocked
+- Build strong cybersecurity fundamentals
+- Understand attacker mindset and techniques
+- Improve investigation and analysis skills
+- Develop clean technical documentation
+- Prepare for cybersecurity internships and roles
 
 ---
 
-### 🥈 Level 2 – Outer Wall
+## ⚠️ Disclaimer
 
-**Username:**
-- New Base64 encoded username from chatbot
-- Decoded using CyberChef
-
-**Password:**
-- JavaScript file revealed Double Base 64
-- Reconstructed password accordingly
-
-**Result:Itoldyoutochangeit!** Outer Wall unlocked
+All content in this repository is intended for **learning and educational purposes only**.  
+The techniques demonstrated should only be used in **authorized environments**
+such as TryHackMe labs or legal testing scenarios.
 
 ---
 
-### 🥉 Level 3 – Guard House
+## 👩‍💻 Author
 
-**Username:**
-- Base64 encoded, decoded via CyberChef
-
-**Password:**
-- JavaScript included conditional checks
-- Manual code tracing using Base 64 and XOR helped derive valid password
-
-**Result:BugsBunny** Guard House unlocked
+**Riya Dhakad**  
+Cybersecurity Student  
+TryHackMe Learner | CTF Enthusiast
 
 ---
 
-### 🏰 Level 4 – Inner Castle
-
-**Username:**
-- Retrieved from chatbot and Base64 decoded
-
-**Password:**
-- JavaScript logic was slightly obfuscated
-- Included variable operations and comparisons
-- Password derived by Crackstation from converting hash valued password 
-
-**Result:passw0rd1** Inner Castle unlocked
-
----
-
-### 🏯 Level 5 – Prison Tower
-
-**Username:**
-- Final encoded username decoded using CyberChef
-
-**Password:**
-- Most complex logic among all levels
-- Required careful analysis of JavaScript functions
-- From Base64 ⇒ From Hex ⇒ Reverse
-- Correct password derived  after evaluating conditions
-
-**Result:51rBr34chBl0ck3r** Prison Tower unlocked and McSkidy freed 🎉
-
-Final flag recieved :: THM{M3D13V4L_D3C0D3R_4D3P7}
-
-## 🧠 Key Learnings
-
-- Difference between **encoding and encryption**
-- Practical usage of **CyberChef for decoding tasks**
-- Importance of **client-side code inspection**
-- Why authentication logic should never be fully exposed on the client side
-- Real-world relevance of JavaScript reverse engineering
-
----
-
-## 🔐 Security Takeaway
-
-> Relying on client-side JavaScript for authentication logic is insecure.
-> Sensitive operations should always be handled on the server side to
-> prevent credential exposure and bypass attacks.
-
----
-
-## ✅ Conclusion
-
-This room provided hands-on experience with **encoding/decoding techniques** and
-**web application logic analysis**. By solving each level sequentially, it
-demonstrated how minor weaknesses in implementation can lead to complete system
-compromise.
-
----
-
-### 📎 References
-- TryHackMe Room: https://tryhackme.com/room/encoding-decoding-aoc2025-s1a4z7x0c3
-- CyberChef: https://gchq.github.io/CyberChef/
-
----
+⭐ If you find this repository helpful, feel free to star it!
