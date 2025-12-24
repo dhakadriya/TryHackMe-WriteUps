@@ -35,8 +35,8 @@ All write-ups are created **for educational purposes only**.
 
 | Day | Room | Write-up |
 |----|------|---------|
-| Day 01 | Linux CLI – Shells & Bells | [View](Advent-of-Cyber-2025/Day-01-Linux-CLI-Shells-and-Bells.md) |
-| Day 02 | Phishing – Merry Clickmas | [View](Advent-of-Cyber-2025/Day-02-Phishing-Merry-Clickmas.md) |
+| Day 01 | Linux CLI – Shells & Bells | [View](TryHackMe-WriteUps/Day1.md) |
+| Day 02 | Phishing – Merry Clickmas | [View](TryHackMe-WriteUps/Day2.md)) |
 
 ---
 
