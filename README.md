@@ -1,79 +1,76 @@
-# 🔐 TryHackMe CTF Write-ups
+# 🔐 TryHackMe Write-Ups
 
-Welcome to my **TryHackMe CTF Write-ups Repository** 👋  
+Welcome to my **TryHackMe Write-Ups Repository** 👋  
 
-This repository contains my documented solutions for various **TryHackMe rooms**,
-with a focus on **cybersecurity fundamentals, hands-on labs, and real-world attack
-and defense techniques**. Each write-up explains the **methodology, tools used,
-and key learnings** from the room.
+This repository contains my documented solutions for various **TryHackMe rooms**
+— written in a clear, professional format suitable for **learning,
+portfolio-building, and interview preparation**.
 
----
-
-## 📌 About This Repository
-
-- 📚 Step-by-step CTF write-ups
-- 🛠 Practical use of security tools
-- 🧠 Focus on understanding *why* an attack works
-- ✍️ Clear, professional documentation
-- 🎯 Internship and interview ready
-
-All write-ups are created **for educational purposes only**.
+Each write-up includes:
+- 🧠 Concepts & objectives  
+- 🛠 Tools used  
+- 🧩 Step-by-step walkthrough  
+- 🎯 Flags & findings  
+- 🧾 Key learnings  
 
 ---
 
-## 🧩 Categories Covered
+## 🎄 Advent of Cyber 2025 — Write-Ups
 
-- 🐧 Linux Fundamentals & CLI
-- 🎣 Social Engineering & Phishing
-- 🔐 Encoding & Decoding
-- 🌐 Web Security
-- 🔍 Blue Team & Log Analysis
+| Day | Room | File |
+|----|------|------|
+| Day 01 | Linux CLI – Shells & Bells | [View](Day1.md) |
+| Day 02 | Phishing – Merry Clickmas | [View](Day2.md) |
+| Day 03 | Splunk Basics – Did You SIEM? | [View](Day3.md) |
+| Day 04 | AI in Security – old sAInt nick | [View](Day4.md) |
+| Day 05 | IDOR – Santa’s Little IDOR | [View](Day5.md) |
+| Day 06 | Malware Analysis – Egg-xecutable | [View](Day6.md) |
+| Day 07 | Network Discovery – Scan-ta Clause | [View](Day7.md) |
+| Day 08 | Prompt Injection – Sched-yule Conflict | [View](Day8.md) |
+| Day 09 | Passwords – A Cracking Christmas | [View](Day9.md) |
+| Day 10 | SOC Alert Triaging – Tinsel Triage | [View](Day10.md) |
+| Day 11 | XSS – Merry XSSMas | [View](Day11.md) |
+
+*(More days will be added as I complete them.)*
 
 ---
 
-## 🎄 Advent of Cyber 2025
+## 🛠 Skills & Topics Covered
 
-| Day | Room | Write-up |
-|----|------|---------|
-| Day 01 | Linux CLI – Shells & Bells | [View](TryHackMe-WriteUps/Day1.md) |
-| Day 02 | Phishing – Merry Clickmas | [View](TryHackMe-WriteUps/Day2.md)) |
-
----
-
-## 🛠 Tools & Technologies
-
-- Linux Command Line
-- CyberChef
-- Social-Engineer Toolkit (SET)
-- Browser Developer Tools
-- TryHackMe AttackBox
+- 🐧 Linux & CLI  
+- 🛡 Blue Team / SOC / SIEM  
+- 🧬 Malware Analysis  
+- 🌐 Web Security & Vulnerabilities  
+- 🎣 Phishing & Social Engineering  
+- 🤖 AI & Security  
+- 🌍 Networking & Enumeration  
+- 🔓 Password & Encryption Cracking  
 
 ---
 
 ## 🎯 Learning Goals
 
-- Build strong cybersecurity fundamentals
-- Understand attacker mindset and techniques
-- Improve investigation and analysis skills
-- Develop clean technical documentation
-- Prepare for cybersecurity internships and roles
+- Strengthen cybersecurity fundamentals  
+- Practice real-world attack & defense workflows  
+- Improve analytical & investigation skills  
+- Develop strong **technical documentation habits**  
+- Build a professional cybersecurity portfolio  
 
 ---
 
 ## ⚠️ Disclaimer
 
-All content in this repository is intended for **learning and educational purposes only**.  
-The techniques demonstrated should only be used in **authorized environments**
-such as TryHackMe labs or legal testing scenarios.
+All activities are performed inside **legal lab environments (TryHackMe)**  
+and are intended for **educational purposes only**.
 
 ---
 
 ## 👩‍💻 Author
 
 **Riya Dhakad**  
-Cybersecurity Student  
-TryHackMe Learner | CTF Enthusiast
+Cybersecurity Learner & CTF Enthusiast  
+Building skills through hands-on labs & write-ups 🚀
 
 ---
 
-⭐ If you find this repository helpful, feel free to star it!
+⭐ If you find this repository useful, feel free to **star it** and follow my progress!
